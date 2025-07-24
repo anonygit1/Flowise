@@ -4,7 +4,7 @@
 # Run image
 # docker run -d -p 3000:3000 flowise
 
-FROM node:20-alpine
+FROM flowiseai/flowise:1.3.1
 RUN apk add --update libc6-compat python3 make g++
 # needed for pdfjs-dist
 RUN apk add --no-cache build-base cairo-dev pango-dev
